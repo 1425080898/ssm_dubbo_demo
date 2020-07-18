@@ -4,6 +4,10 @@ import java.io.Serializable;
 
 public class DeptEntity implements Serializable {
 
+
+    /*
+    * 测试一下github
+    * */
     private Integer deptId;
     private String deptName;
     private Integer orderNum;
