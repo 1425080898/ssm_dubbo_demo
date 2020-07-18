@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzb.dp.dao.DeptDao">
+    <resultMap id="deptMap" type="com.lzb.common.entity.DeptEntity">
+        <id property="deptId" column="dept_id"/>
+        <result property="deptName" column="dept_name"/>
+        <result property="orderNum" column="order_num"/>
+    </resultMap>
+    <select id="select" resultMap="deptMap">
+        select * from tbl_dept
+    </select>
+</mapper>
